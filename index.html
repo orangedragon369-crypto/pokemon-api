@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <header>
+            <script src="scripts/apiScripts.mjs" defer></script>
+        </header>
+        <main>
+            <div class="poki-window">
+                <h3>Pokemon</h3><br>
+                <input type="number" id="numStrt" placeholder="# id to start at">
+                <input type="number" id="numNd" placeholder="# of pokemonto load">
+                <input type="submit" id="btn" value="Submit" onclick="addApiInfo(numStrt, numNd);">
+                <div>
+                    <p>Viewing</p>
+                    <div id="current"></div>
+                    <div class="cont">
+                        <div class="btn"><a href="">&larr; previous</a></div>
+                        <div class="btn"><a href="">Next &rarr;</a></div>
+                    </div>
+                </div>
+                <ul id="pokemon">
+                    <h4>Pokemon</h4>
+                </ul>
+            </div>
+       </main>
+    </body>
+</html>
