@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="css/style.css">
+        <script src="scripts/apiScripts.mjs" defer></script>
     </head>
     <body>
         <header>
-            <script src="scripts/apiScripts.mjs" defer></script>
+            <h3 class="poki-window">Pokemon</h3><br>
         </header>
-        <main>
-            <div class="poki-window">
-                <h3>Pokemon</h3><br>
-                <input type="number" id="numStrt" placeholder="# id to start at">
-                <input type="number" id="numNd" placeholder="# of pokemonto load">
-                <input type="submit" id="btn" value="Submit" onclick="addApiInfo(numStrt, numNd);">
+        <main class="poki-window">
+            <div>
+                <div>
+                    <input type="number" id="num" placeholder="group count">
+                    <input type="submit" id="btn" value="Load" onclick="addApiInfo(numStrt, numNd);">
+                </div>
                 <div>
                     <p>Viewing</p>
                     <div id="current"></div>
-                    <div class="cont">
-                        <div class="btn"><a href="">&larr; previous</a></div>
-                        <div class="btn"><a href="">Next &rarr;</a></div>
+                    <div>
+                        <button type="button" id="pre">Previous</button>
+                        <button type="button" id="nex">Next</button>
                     </div>
                 </div>
-                <ul id="pokemon">
-                    <h4>Pokemon</h4>
-                </ul>
+                <div>
+                    <h4>Pokemon &darr;</h4>
+                    <ul id="pokemon">
+                        <li></li>
+                    </ul>
+                    <div>
+                        <button type="button" id="prior">Previous</button>
+                        <button type="button" id="upcoming">Next</button>
+                    </div>
+                </div>
             </div>
        </main>
     </body>
