@@ -34,3 +34,20 @@ function addApiInfo (strt, nd) {
         }
     }
 }
+
+
+/*`https://pokeapi.co/api/v2/pokemon?offset=${from}&limit=${to}`
+
+async function getApi(api, info) {
+    try{
+        const response = await fetch(api)
+        if(!response.ok){
+            throw new Error("Could not fetch response");
+        }
+        const data = await response.json()
+        console.log(data);
+    }
+    catch(error) {console.error(error)};
+}
+
+const categories = getApi("https://opentdb.com/api_category.php");*/
