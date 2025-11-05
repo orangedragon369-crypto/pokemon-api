@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
-        <script src="scripts/apiScripts.mjs" defer></script>
+        <script src="scripts/apiScripts.js" defer></script>
     </head>
     <body>
         <header>
@@ -11,25 +11,25 @@
         <main class="poki-window">
             <div>
                 <div>
-                    <input type="number" id="num" placeholder="group count">
-                    <input type="submit" id="btn" value="Load" onclick="addApiInfo(numStrt, numNd);">
+                    <input type="text" id="find" placeholder="Looking for something?">
+                    <input type="submit" id="btn" value="Load" onclick="find();">
                 </div>
                 <div>
                     <p>Viewing</p>
-                    <div id="current"></div>
+                    <button id="current" class="pokemon col">
+                    </button>
                     <div>
                         <button type="button" id="pre">Previous</button>
                         <button type="button" id="nex">Next</button>
                     </div>
                 </div>
                 <div>
-                    <h4>Pokemon &darr;</h4>
+                    <h4><span id="label">Pokemon</span><span>&darr;</span></h4>
                     <ul id="pokemon">
-                        <li></li>
                     </ul>
                     <div>
-                        <button type="button" id="prior">Previous</button>
-                        <button type="button" id="upcoming">Next</button>
+                        <button type="button" id="prior" onclick="back();">Previous</button>
+                        <button type="button" id="upcoming" onclick="next();">Next</button>
                     </div>
                 </div>
             </div>
