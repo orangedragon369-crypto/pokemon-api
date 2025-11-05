@@ -2,3 +2,46 @@
     display: flex;
     justify-content: center;
 }
+
+.pokemon, .around, .left{
+    display: flex;
+    padding: 10px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+}
+
+.pokemon{
+    justify-content: space-between
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.left{
+    align-items: left;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.img{
+    width: 20px;
+}
+
+.img:hover{
+    width: 40vw;
+}
+
+.mainImg{
+    width: 40vw;
+    height: 40vw;
+}
+
+#current{
+    width: 75vw;
+    height: 55vh;
+}
